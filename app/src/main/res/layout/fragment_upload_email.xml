@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnGmail">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gmail"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Gmail"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_below="@+id/txtProfile1"
+            android:layout_marginLeft="10dp"
+            android:text="Login via your Gmail account to upload your emails."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnYahoo">
+
+        <ImageView
+            android:id="@+id/imgYahooProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_yahoo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtYahooProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgYahooProfile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Yahoo !"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtYahooProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgYahooProfile"
+            android:layout_below="@+id/txtYahooProfile1"
+            android:layout_marginLeft="10dp"
+            android:text="Login via your Yahoo account to upload your emails."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+</LinearLayout>

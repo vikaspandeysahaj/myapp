@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="15dp"
+    android:id="@+id/llContacts"
+    android:background="@color/app_background_color">
+
+    <ImageView
+        android:id="@+id/imgContactImageRounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sms"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgContactImageRounded">
+
+        <TextView
+            android:id="@+id/txtSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_primary_text_color"
+            android:text="Vikas Pandey"
+            android:paddingLeft="20px"
+            android:textSize="@dimen/app_default_text"
+            android:singleLine="true"
+            android:paddingRight="33dp"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_light_primary_text_color"
+            android:text="+919739623687"
+            android:paddingLeft="20px"
+            android:textSize="@dimen/app_note_text"
+            android:layout_below="@+id/txtSenderName"
+            android:singleLine="true"
+            android:paddingRight="30dp"/>
+
+        <ImageView
+            android:id="@+id/itemSelectionIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

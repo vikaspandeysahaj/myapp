@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_header_h1">40dp</dimen>
+    <dimen name="app_title_big">36sp</dimen>
+    <dimen name="app_title_mid">31sp</dimen>
+    <dimen name="app_title_small">16sp</dimen>
+    <dimen name="app_header_text">31sp</dimen>
+    <dimen name="app_sub_header_text">20sp</dimen>
+    <dimen name="app_default_text">15sp</dimen>
+    <dimen name="app_button_text">16sp</dimen>
+    <dimen name="app_note_text">13sp</dimen>
+    <dimen name="app_action_bar_height">50sp</dimen>
+    <dimen name="app_time_stamp_text">11sp</dimen>
+
+    <dimen name="app_navigation_drawer_width">240dp</dimen>
+
+    <dimen name="app_buy_button_width">65dp</dimen>
+    <dimen name="app_buy_button_height">35dp</dimen>
+
+    <dimen name="product_view_width">150dp</dimen>
+    <dimen name="product_view_height">200dp</dimen>
+    <dimen name="product_image_width">125dp</dimen>
+    <dimen name="product_image_height">125dp</dimen>
+    <dimen name="grid_width">250dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="app_navigation_text">17sp</dimen>
+
+    <dimen name="app_banner_text">28sp</dimen>
+    <dimen name="swapDistance">100dp</dimen>
+    <dimen name="app_price_filter_line">1dp</dimen>
+
+    <dimen name="fb_margin_override_top">13dp</dimen>
+    <dimen name="fb_margin_override_bottom">13dp</dimen>
+    <!--The next value changes the margin between the FB icon and the left border:-->
+    <dimen name="fb_margin_override_lr">10dp</dimen>
+    <!--The next value changes the margin between the FB icon and the login text:-->
+    <dimen name="fb_margin_override_textpadding">17dp</dimen>
+
+</resources>

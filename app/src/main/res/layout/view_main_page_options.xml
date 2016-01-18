@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnProfile">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="My Profile"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_below="@+id/txtProfile1"
+            android:layout_marginLeft="10dp"
+            android:text="Update your profile i.e. address, email, mobile number etc."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnUpload">
+
+        <ImageView
+            android:id="@+id/imgUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upload_data"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtUploadData1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgUpload"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Upload Data"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtUploadData2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgUpload"
+            android:layout_below="@+id/txtUploadData1"
+            android:layout_marginLeft="10dp"
+            android:text="Upload your SMS, Email or images to increase you wallet money."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnSendMoney">
+
+        <ImageView
+            android:id="@+id/imgSendMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_money"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtSendMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgSendMoney"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Send Money"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtSendMoney2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgSendMoney"
+            android:layout_below="@+id/txtSendMoney1"
+            android:layout_marginLeft="10dp"
+            android:text="Share money to your friends from your wallet."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/btnRequestMoney">
+
+        <ImageView
+            android:id="@+id/imgRequestMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_request_money"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtRequestMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRequestMoney"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Request Money"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"/>
+
+
+        <TextView
+            android:id="@+id/txtRequestMoney2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRequestMoney"
+            android:layout_below="@+id/txtRequestMoney1"
+            android:layout_marginLeft="10dp"
+            android:text="Request for money to increase you wallet money."
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_light_primary_text_color"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+</LinearLayout>

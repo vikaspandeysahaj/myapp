@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/app_primary_color">
+
+        <com.monetease.app.custom.RoundedImageView
+            android:id="@+id/imgDrawerUser"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_profile_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/txtDrawerUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgDrawerUser"
+            android:paddingLeft="15dp"
+            android:text=""
+            android:textSize="@dimen/app_navigation_text"
+            android:textColor="@color/app_light_color"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View style="@style/app_divider" android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/btnProfile">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_profile_defualt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:layout_marginLeft="10dp"
+            android:text="My Profile"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/btnLogout">
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgLogout"
+            android:layout_marginLeft="10dp"
+            android:text="Logout"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

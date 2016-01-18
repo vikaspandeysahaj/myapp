@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="15dp"
+    android:id="@+id/llContacts"
+    android:background="@color/app_background_color">
+
+    <ImageView
+        android:id="@+id/imgSender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+       android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgSender">
+
+        <TextView
+            android:id="@+id/txtSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_primary_text_color"
+            android:text="Vikas Pandey"
+            android:paddingLeft="20px"
+            android:textSize="@dimen/app_default_text"
+            android:singleLine="true"
+            android:paddingRight="33dp"/>
+
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_primary_text_color"
+            android:text="this is dicri asda dasd asd as asdasd asd asd asd das da sda sd as da sd a"
+            android:paddingLeft="20px"
+            android:textSize="@dimen/app_note_text"
+            android:layout_below="@+id/txtSenderName"
+            android:lines="1"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_light_primary_text_color"
+            android:text="this is dicri asda dasd asd as asdasd asd asd asd das da sda sd as da sd a"
+            android:paddingLeft="20px"
+            android:textSize="@dimen/app_time_stamp_text"
+            android:layout_below="@+id/txtSubject"
+            android:lines="1"/>
+
+        <ImageView
+            android:id="@+id/itemSelectionIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

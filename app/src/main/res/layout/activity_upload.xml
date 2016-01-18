@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@color/app_background_color">
+
+
+
+    <!-- This is the Toolbar with the tabs underneath -->
+    <LinearLayout android:id="@+id/detail_headerBar"
+                  style="@style/HeaderBar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/app_primary_color">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Upload Data"
+                    android:textColor="@color/app_light_color"
+                    android:id="@+id/toolbar_title"
+                    android:textSize="@dimen/app_sub_header_text"
+                    android:layout_toRightOf="@+id/btnBack"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/btnUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_upload"
+                    android:layout_alignParentRight="true"
+                    android:padding="20dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.monetease.app.custom.SlidingTabLayout
+            android:id="@+id/sliding_tabs"
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View style="@style/app_divider" android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <!-- This is the ViewPager (which I had used before) and
+         it would be responsible for the swiping to change layouts -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_headerBar"
+        android:layout_above="@+id/detail_adView"
+        android:background="@color/app_background_color"/>
+
+
+</LinearLayout>

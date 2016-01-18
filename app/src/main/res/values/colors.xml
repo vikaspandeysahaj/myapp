@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="colorPrimaryDark">#72BA91</color>
+    <color name="colorPrimary">#7DC89E</color>
+
+    <color name="app_dark_primary_color">#72BA91</color>
+    <color name="app_primary_color">#7DC89E</color>
+    <color name="app_light_primary_color">#92DFB5</color>
+    <color name="app_light_color">#FFFFFF</color>
+    <color name="app_accent_color">#E74C3D</color>
+    <color name="app_primary_text_color">#212121</color>
+    <color name="app_light_primary_text_color">#727272</color>
+    <color name="app_divider_color">#D0D0D0</color>
+    <color name="app_product_back_color">#EDEDED</color>
+
+    <color name="app_chat_sent_color">#DDEEFD</color>
+    <color name="app_chat_received_color">#F5F5F5</color>
+    <color name="app_help_text_color">#ffcdcdcd</color>
+    <color name="app_background_color">#FFFFFF</color>
+    <color name="app_background_dark_color">#E5E5E5</color>
+
+    <color name="app_layout_select_color">#2CACFF</color>
+    <color name="app_black_ribbon">#A6000000</color>
+    <color name="app_profile_ribbon">#AF2C89DC</color>
+
+    <color name="app_system_message">#FFFFFF</color>
+    <color name="app_filter_color">#99D0D0D0</color>
+
+    <color name="sms_error">#E94011</color>
+
+    <color name="app_showCase_Back_Color">#e6000000</color>
+
+</resources>

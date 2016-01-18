@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/app_primary_color">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/ic_back"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/app_primary_color">
+
+                <com.monetease.app.custom.RoundedImageView
+                    android:id="@+id/imageUserProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_profile_defualt"
+                    android:layout_centerHorizontal="true"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/imageUserProfile">
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/txtUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_light_color"
+                        android:textSize="@dimen/app_sub_header_text"
+                        android:text="Vikas Pandey"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_light_color"
+                        android:textSize="@dimen/app_default_text"
+                        android:text="vikas.pandey4@gmail.com"
+                        android:layout_below="@+id/txtUserName"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp" android:id="@+id/imgMobile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_primary_text_color"
+                    android:textSize="@dimen/app_default_text"
+                    android:background="@color/app_light_color"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtMobile"
+                    android:layout_toRightOf="@+id/imgMobile"
+                    android:layout_centerVertical="true"
+                    android:hint="Enter Your number"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/app_divider" android:layout_height="0.2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/btnDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dob"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp" android:id="@+id/imgDob"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_primary_text_color"
+                    android:textSize="@dimen/app_default_text"
+                    android:hint="Enter Your date of Birth"
+                    android:background="@color/app_light_color"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" android:id="@+id/txtDOB"
+                    android:layout_toRightOf="@+id/imgDob"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/app_divider" android:layout_height="0.2dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gender"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp" android:id="@+id/imgGender"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/app_primary_text_color"
+                    android:textSize="@dimen/app_default_text"
+                    android:hint="Select your gender"
+                    android:background="@color/app_light_color"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp" android:id="@+id/txtGender"
+                    android:layout_toRightOf="@+id/imgGender"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/app_divider" android:layout_height="0.2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/btnAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_address"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp" android:id="@+id/imgAddress"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_primary_text_color"
+                    android:textSize="@dimen/app_default_text"
+                    android:hint="Enter your full address"
+                    android:background="@color/app_light_color"
+                    android:maxLines="10"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/txtAddress"
+                    android:layout_toRightOf="@+id/imgAddress"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/app_divider" android:layout_height="0.2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/btnProvider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_provider"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp" android:id="@+id/imgProvider"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_primary_text_color"
+                    android:textSize="@dimen/app_default_text"
+                    android:hint="Enter data Service Provider"
+                    android:background="@color/app_light_color"
+                    android:paddingLeft="10dp" android:id="@+id/txtProvider"
+                    android:layout_toRightOf="@+id/imgProvider"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/app_divider" android:layout_height="0.2dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Update"
+                android:id="@+id/btnUpdate"
+                android:background="@color/app_primary_color"
+                android:textColor="@color/app_light_color"
+                android:textSize="@dimen/app_button_text"
+                android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+

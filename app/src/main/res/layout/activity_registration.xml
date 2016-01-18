@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_background_color">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_no_back"
+            android:layout_gravity="center"
+            android:layout_above="@+id/buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:id="@+id/buttons">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please use below way to register with us"
+                android:gravity="center"
+                android:textColor="@color/app_light_primary_text_color"
+                android:textSize="@dimen/app_default_text"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnRegisterGamil"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <com.facebook.login.widget.LoginButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Facebook"
+                android:id="@+id/btnRegisterFacebook"
+                android:background="#3B5998"
+                android:textColor="@color/app_light_color"
+                android:textSize="@dimen/app_button_text"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Twitter"
+                android:id="@+id/btnRegisterTwiter"
+                android:background="#2EACF6"
+                android:textColor="@color/app_light_color"
+                android:textSize="@dimen/app_button_text"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
